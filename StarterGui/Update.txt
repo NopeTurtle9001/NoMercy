@@ -1,0 +1,1 @@
+BanClient has been removed due to overall better coding structure
