@@ -3,6 +3,7 @@ local Players = game:GetService("Players")
 
 local TextBox = script.Parent
 
+TextBox.PlaceholderText="Enter Name Here"
 
 
 local function onTextChanged()
