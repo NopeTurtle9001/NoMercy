@@ -25,7 +25,11 @@ local function onTextChanged()
 		text = "Enter Name Here"
 		for _, child in PlayerList:GetChildren() do
 			-- Make all children visible
-			child.Visible = true
+			if not child:IsA("Frame") or child:IsA("UIListLayout") then
+				-- Do nothing
+			else
+				child.Visible = true
+			end
 		end
 	end
 end
