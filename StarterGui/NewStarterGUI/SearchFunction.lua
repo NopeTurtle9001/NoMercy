@@ -11,7 +11,9 @@ local function onTextChanged()
 	local PlayerList = script.Parent.Parent
 	for _, child in PlayerList:GetChildren() do
 		if child:IsA("Frame") and child.Name ~= "Header" then
-			if string.find(text, child.Name) then
+			-- Get the ButtonForModeration 
+			local ButtonForMod = child:FindFirstChild("ButtonUsedForModeration")
+			if string.find(text, ButtonForMod.Text) then
 				child.Visible = true
 			else
 				child.Visible = false
