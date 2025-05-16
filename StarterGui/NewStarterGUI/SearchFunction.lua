@@ -10,7 +10,7 @@ local function onTextChanged()
 	--Get all player frames in plist scrolling frame
 	local PlayerList = script.Parent.Parent
 	for _, child in PlayerList:GetChildren() do
-		if child:IsA("Frame") and child.Name ~= "Header" then
+		if child:IsA("Frame") and child.Name ~= "Header" and not (child:IsA("UIListLayout") or child:IsA("LocalScript") or child:IsA("TextBox")) then
 			-- Get the ButtonForModeration 
 			local ButtonForMod = child:FindFirstChild("ButtonUsedForModeration")
 			if string.find(text, ButtonForMod.Text) then
@@ -25,7 +25,7 @@ local function onTextChanged()
 		text = "Enter Name Here"
 		for _, child in PlayerList:GetChildren() do
 			-- Make all children visible
-			if not child:IsA("Frame") or child:IsA("UIListLayout") then
+			if child:IsA("UIListLayout") or child:IsA("LocalScript") or child:IsA("TextBox") then
 				-- Do nothing
 			else
 				child.Visible = true
