@@ -1,0 +1,2 @@
+Things to know about files in this folder.
+All code is pretty similar and will be listeed under some UI element so keep in mind that you must manually recreate said UI elements before running any of this in studio
