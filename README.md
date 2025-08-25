@@ -32,6 +32,4 @@ To work around these restrictions, consider introducing an **intermediary servic
 
 ---
 
-Finally, thanks for staying along the way. If you have any questions about my code or how this system works reach out to me via email @NopeTurtle91@gmail.com ot Discord via nopeturtle.
-
-If you’d like, I can **draft a Cloudflare Worker example** that securely receives Roblox requests and commits to a GitHub repo without exposing your credentials. That would give you a working drop-in bridge for your banlist updates.
+Finally, thanks for staying along the way. If you have any questions about my code or how this system works reach out to me via email @NopeTurtle91@gmail.com or Discord via nopeturtle.
